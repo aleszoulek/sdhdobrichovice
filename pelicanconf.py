@@ -6,8 +6,9 @@ from os.path import join, dirname, pardir
 BASE_DIR = dirname(__file__)
 
 AUTHOR = 'SDH Dobřichovice'
-SITENAME = 'SDH Dobřichovice'
-SITEURL = ''
+SITENAME = 'Hasiči Dobřichovice'
+SITEURL = 'http://www.sdhdobrichovice.cz'
+SITEURL = 'http://127.0.0.1:8000'
 
 PATH = 'content'
 
@@ -35,12 +36,12 @@ SOCIAL = (
 )
 
 PLUGIN_PATHS = [join(BASE_DIR, pardir, 'pelican-plugins')]
-PLUGINS = ['photos',]
+PLUGINS = ['photos', 'lightbox']
 PHOTO_LIBRARY = join(BASE_DIR, 'content', 'images', 'gallery')
 PHOTO_GALLERY = (1024, 768, 80)
-PHOTO_ARTICLE = ( 760, 506, 80)
+PHOTO_ARTICLE = (760, 506, 80)
 PHOTO_THUMB = (192, 144, 60)
- 
+
 
 THEME = join(BASE_DIR, 'themes', 'bricks')
 
