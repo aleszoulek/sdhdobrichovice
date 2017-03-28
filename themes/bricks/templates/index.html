@@ -16,7 +16,7 @@
             {% endif %}
             <li>
             <div class="sec-article">
-                 <div class="read-more">{{ article.locale_date}}</div>
+                <div class="read-more"><a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a> | {{ article.locale_date}}</div> 
                  <h3>
                      <a href="{{ SITEURL }}/{{ article.url }}" rel=Bookmark title="Permalink to {{ article.title | striptags }}">
                          {% if article.icon %}<img src="{{ SITEURL }}/images/icons/{{ article.icon }}.png" width=25 height=25 />{% endif %}
@@ -24,7 +24,6 @@
                      </a>
                  </h3>
                  <p>
-                 {{ article.category }}
                 {{ article.summary }}            
                 dfasdf
                 </p>
@@ -35,7 +34,7 @@
         {% else %}
             <!-- prima pagina -->
             <div class="main-article">
-                <div class="read-more">{{ article.locale_date}}</div>
+                <div class="read-more"><a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a> | {{ article.locale_date}}</div> 
                 <h2>
                     <a href="{{ SITEURL }}/{{ article.url }}" rel=Bookmark title="Permalink to {{ article.title | striptags }}">
                         {% if article.icon %}<img src="{{ SITEURL }}/images/icons/{{ article.icon }}.png" width=25 height=25 />{% endif %}
@@ -55,7 +54,7 @@
     {% else %}
         <li>
             <div class="sec-article">
-                <div class="read-more">{{ article.locale_date}}</div>
+                <div class="read-more"><a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a> | {{ article.locale_date}}</div> 
                 {% if article.icon %}<img src="{{ SITEURL }}/icons/{{ article.icon }}.png" />{% endif %}
                 <h3>
                     <a href="{{ SITEURL }}/{{ article.url }}" rel=Bookmark title="Permalink to {{ article.title | striptags }}">

@@ -1,7 +1,8 @@
 Title: Požár pole u Vonoklas
 Date: 2016-08-17 13:00
-Category: Výjezdy
+Category: Požár
 Icon: pozar
+Location: Vonoklasy
 gallery: {photo}2016-08-17-Pozar-Vonoklasy
 summary: Jednotky HZS Řevnice a SDH Dobřichovice vyjely s třemi cisternami k požáru kombajnu a dvou hektarů pole nedaleko obce Vonoklasy v okrese Praha-západ.
 
